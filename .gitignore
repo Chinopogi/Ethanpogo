@@ -1,5 +1,16 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+$str = "Hello Friend";
+$kTime = 5;
+$arr = explode (' ',$str);
+$sizeOfArr = count($arr);
+$char = array();
+$count = 0;
+foreach($arr as $k=>$v)
+{
+  $ln = $kTime%strlen($v);
+  $char = substr($v,$ln).substr($v,0,$ln);
+  if($v == $char)
+    {
+      $count++;
+    }
+}
+echo 'Number of Original word after rotation 
